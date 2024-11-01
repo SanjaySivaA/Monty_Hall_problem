@@ -27,8 +27,8 @@ def simulate_with_switch() :
         return 1
 
 for i in range(n) :
-    door_with_prize = random.randint(0, 2)
-    initial_choice = random.randint(0, 2)
+    door_with_prize = random.choice(doors)
+    initial_choice = random.choice(doors)
     
     without_switch += simulate_without_switch()
     with_switch += simulate_with_switch()
